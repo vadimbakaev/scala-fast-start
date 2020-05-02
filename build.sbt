@@ -2,15 +2,15 @@ lazy val root = (project in file("."))
   .settings(
     name := "???",
     version := "0.1",
-    scalaVersion := "2.12.10",
+    scalaVersion := "2.12.11",
     libraryDependencies ++= {
 
       object Version {
-        val scalaTest    = "3.1.0"
-        val mockitoScala = "1.10.2"
+        val scalaTest    = "3.1.1"
+        val mockitoScala = "1.14.0"
         val scalaFmt     = "1.5.1"
-        val cats         = "2.1.0"
-        val pureConfig   = "0.12.2"
+        val cats         = "2.1.1"
+        val pureConfig   = "0.12.3"
         val scalaLogging = "3.9.2"
         val logback      = "1.2.3"
       }
