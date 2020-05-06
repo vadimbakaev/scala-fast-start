@@ -1,6 +1,6 @@
 package vbakaev.app.services
 
-import java.time.{Clock, Instant}
+import java.time.Clock
 
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
@@ -9,8 +9,8 @@ import akka.http.scaladsl.server.directives.RouteDirectives.complete
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.{Content, Schema}
 import io.swagger.v3.oas.annotations.responses.ApiResponse
-import vbakaev.app.models.response.StatusResponse
 import javax.ws.rs.{GET, Path}
+import vbakaev.app.models.response.StatusResponse
 
 @Path("/status")
 class StatusService()(implicit clock: Clock) extends Service with JsonSupport {

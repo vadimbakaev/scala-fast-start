@@ -7,7 +7,7 @@ import vbakaev.app.services.Service
 
 class SwaggerService(serverConfig: ServerConfig, services: Set[Service]) extends Service with SwaggerHttpService {
   override val apiClasses: Set[Class[_]]        = services.map(_.getClass)
-  override val host                             = s"${serverConfig.interface}:${serverConfig.port}"
-  override val info                             = Info(version = "1.0")
+  override val host: String                     = s"${serverConfig.interface}:${serverConfig.port}"
+  override val info: Info                       = Info(version = "1.0")
   override val unwantedDefinitions: Seq[String] = Seq("Function1", "Function1RequestContextFutureRouteResult")
 }
