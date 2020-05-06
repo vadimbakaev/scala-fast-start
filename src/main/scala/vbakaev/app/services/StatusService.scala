@@ -15,7 +15,7 @@ import vbakaev.app.models.response.StatusResponse
 @Path("/status")
 class StatusService()(implicit clock: Clock) extends Service with JsonSupport {
 
-  private val Response = StatusResponse(clock.instant().toString)
+  private val statusResponse = StatusResponse(clock.instant().toString)
 
   lazy val routes: Route = getStatus
 
@@ -32,7 +32,7 @@ class StatusService()(implicit clock: Clock) extends Service with JsonSupport {
   def getStatus: Route =
     path("status") {
       get {
-        complete(Response)
+        complete(statusResponse)
       }
     }
 
