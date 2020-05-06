@@ -13,12 +13,12 @@ lazy val root = (project in file("."))
         val scalaLogging    = "3.9.2"
         val logback         = "1.2.3"
         val akkaHttp        = "10.1.11"
-        val akkaStream      = "2.5.26"
+        val akkaStream      = "2.5.31"
         val swaggerAkkaHttp = "2.0.2"
         val swaggerScala    = "2.0.3"
-        val circe           = "0.11.1"
+        val circe           = "0.11.2"
         val akkaHttpCirce   = "1.32.0"
-        val javaxWsRs       = "2.0.1"
+        val javaxWsRs       = "2.1.1"
       }
 
       Seq(
