@@ -1,4 +1,4 @@
-addSbtPlugin("com.geirsson" % "sbt-scalafmt" % "1.5.1")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.0")
 
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.3.4")
 
