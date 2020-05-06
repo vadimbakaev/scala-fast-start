@@ -16,7 +16,7 @@ lazy val root = (project in file("."))
         val akkaStream      = "2.5.26"
         val swaggerAkkaHttp = "2.0.2"
         val swaggerScala    = "2.0.3"
-        val circe           = "0.11.1"
+        val circe           = "0.11.2"
         val akkaHttpCirce   = "1.25.2"
         val javaxWsRs       = "2.1.1"
       }
