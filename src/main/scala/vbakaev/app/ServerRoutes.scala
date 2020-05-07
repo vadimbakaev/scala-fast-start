@@ -4,18 +4,18 @@ import java.time.Clock
 
 import akka.http.scaladsl.server.{Route, RouteConcatenation}
 import vbakaev.app.config.AppConfig
-import vbakaev.app.services._
-import vbakaev.app.services.swagger.{SwaggerService, SwaggerUIService}
+import vbakaev.app.interfaces._
+import vbakaev.app.interfaces.swagger.{SwaggerInterface, SwaggerUIInterface$}
 
 class ServerRoutes(appConfig: AppConfig)(implicit clock: Clock) extends RouteConcatenation {
 
-  private val documentedServices: Set[Service] = Set(
-    new StatusService()
+  private val documentedServices: Set[Interface] = Set(
+    new StatusInterface()
   )
 
-  private val services: Set[Service] = Set(
-    SwaggerUIService,
-    new SwaggerService(appConfig.http, documentedServices)
+  private val services: Set[Interface] = Set(
+    SwaggerUIInterface$,
+    new SwaggerInterface(appConfig.http, documentedServices)
   )
 
   val routes: Route = (services ++ documentedServices).map(_.routes).reduce(_ ~ _)

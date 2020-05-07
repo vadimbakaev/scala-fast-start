@@ -1,9 +1,9 @@
-package vbakaev.app.services.swagger
+package vbakaev.app.interfaces.swagger
 
 import akka.http.scaladsl.server.{Directives, Route}
-import vbakaev.app.services.Service
+import vbakaev.app.interfaces.Interface
 
-object SwaggerUIService extends Service with Directives {
+object SwaggerUIInterface$ extends Interface with Directives {
   val routes: Route =
   path("swagger") { getFromResource("swagger/index.html") } ~
   getFromResourceDirectory("swagger")

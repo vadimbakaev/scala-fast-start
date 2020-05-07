@@ -1,4 +1,4 @@
-package vbakaev.app.services
+package vbakaev.app.interfaces
 
 import java.time.Clock
 
@@ -13,7 +13,7 @@ import javax.ws.rs.{GET, Path}
 import vbakaev.app.models.response.StatusResponse
 
 @Path("/status")
-class StatusService()(implicit clock: Clock) extends Service with JsonSupport {
+class StatusInterface()(implicit clock: Clock) extends Interface with JsonSupport {
 
   private val statusResponse = StatusResponse(clock.instant().toString)
 

@@ -1,7 +1,7 @@
-package vbakaev.app.services
+package vbakaev.app.interfaces
 
 import akka.http.scaladsl.server.Route
 
-trait Service {
+trait Interface {
   def routes: Route
 }

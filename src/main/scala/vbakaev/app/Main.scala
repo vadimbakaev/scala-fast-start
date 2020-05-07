@@ -17,7 +17,6 @@ import scala.concurrent.ExecutionContextExecutor
 object Main extends App with LazyLogging {
   implicit val clock: Clock                               = Clock.systemUTC()
   implicit val system: ActorSystem                        = ActorSystem()
-  implicit val mat: ActorMaterializer                     = ActorMaterializer()
   implicit val executionContext: ExecutionContextExecutor = system.dispatcher
 
   ConfigSource.default
