@@ -13,7 +13,7 @@ lazy val root = (project in file("."))
         val scalaLogging    = "3.9.2"
         val logback         = "1.2.3"
         val akkaHttp        = "10.1.11"
-        val akkaStream      = "2.6.5"
+        val akka            = "2.6.5"
         val swaggerAkkaHttp = "2.0.5"
         val swaggerScala    = "2.1.0"
         val circe           = "0.13.0"
@@ -30,7 +30,8 @@ lazy val root = (project in file("."))
         "com.github.swagger-akka-http" %% "swagger-akka-http"    % Version.swaggerAkkaHttp,
         "com.github.swagger-akka-http" %% "swagger-scala-module" % Version.swaggerScala,
         "com.typesafe.akka"            %% "akka-http"            % Version.akkaHttp,
-        "com.typesafe.akka"            %% "akka-stream"          % Version.akkaStream,
+        "com.typesafe.akka"            %% "akka-stream"          % Version.akka,
+        "com.typesafe.akka"            %% "akka-slf4j"           % Version.akka,
         "com.geirsson"                 %% "scalafmt-core"        % Version.scalaFmt,
         "org.typelevel"                %% "cats-core"            % Version.cats,
         "com.github.pureconfig"        %% "pureconfig"           % Version.pureConfig,
