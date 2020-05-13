@@ -16,3 +16,7 @@ project/plugins/project/
 /.settings
 *.class
 *.log
+
+.metals/
+.bloop/
+project/metals.sbt
