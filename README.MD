@@ -67,9 +67,9 @@ And again you'd need to tell what the previous code actually does.
 
 What's all the bells and whistles this project can perform?
 
-  - What's the main functionality
-  - You can also do another thing
-  - If you get really randy, you can even do this
+- What's the main functionality
+- You can also do another thing
+- If you get really randy, you can even do this
 
 ## Configuration
 
@@ -119,17 +119,17 @@ Even though this information can be found inside the project on machine-readable
 format like in a .json file, it's good to include a summary of most useful
 links to humans using your project. You can include links like:
 
-  - Project homepage: <https://your.github.com/awesome-project/>
-  - Repository: <https://github.com/your/awesome-project/>
-  - Issue tracker: <https://github.com/your/awesome-project/issues>
+- Project homepage: <https://your.github.com/awesome-project/>
+- Repository: <https://github.com/your/awesome-project/>
+- Issue tracker: <https://github.com/your/awesome-project/issues>
 
-    - In case of sensitive bugs like security vulnerabilities, please contact
-      my@email.com directly instead of using issue tracker. We value your effort
-      to improve the security and privacy of this project!
+  - In case of sensitive bugs like security vulnerabilities, please contact
+    my@email.com directly instead of using issue tracker. We value your effort
+    to improve the security and privacy of this project!
 
-  - Related projects:
-    - Your other project: <https://github.com/your/other-project/>
-    - Someone else's project: <https://github.com/someones/awesome-project/>
+- Related projects:
+  - Your other project: <https://github.com/your/other-project/>
+  - Someone else's project: <https://github.com/someones/awesome-project/>
 
 ## Licensing
 
