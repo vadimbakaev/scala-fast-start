@@ -30,7 +30,9 @@ object Main extends App with LazyLogging {
         RunnableGraph
           .fromGraph(GraphDSL.create() { implicit b =>
             logger.info(s"Server is running on http://${config.http.interface}:${config.http.port}/status")
-            logger.info(s"See documentation http://${config.http.interface}:${config.http.port}/swagger")
+            logger.info(
+              s"See documentation http://${config.http.interface}:${config.http.port}/swagger-ui/index.html?url=/api-docs/swagger.json"
+            )
 
             val serverRoutes   = new ServerRoutes(config).routes
             val httpConnection = Http()(system).bind(config.http.interface, config.http.port)
