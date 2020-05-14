@@ -1,5 +1,7 @@
 # Name of the project
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f5556ea0f614b1397fe2be557d5f9fe)](https://app.codacy.com/manual/vadimbakaev/scala-fast-start?utm_source=github.com&utm_medium=referral&utm_content=vadimbakaev/scala-fast-start&utm_campaign=Badge_Grade_Dashboard)
+
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
 > Additional information or tagline
