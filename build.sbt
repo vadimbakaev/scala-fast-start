@@ -7,7 +7,6 @@ lazy val root = (project in file("."))
       object Version {
         val scalaTest       = "3.1.2"
         val mockitoScala    = "1.14.1"
-        val scalaFmt        = "1.5.1"
         val cats            = "2.1.1"
         val pureConfig      = "0.12.3"
         val scalaLogging    = "3.9.2"
@@ -36,7 +35,6 @@ lazy val root = (project in file("."))
         "com.typesafe.akka"            %% "akka-http"            % Version.akkaHttp,
         "com.typesafe.akka"            %% "akka-stream"          % Version.akka,
         "com.typesafe.akka"            %% "akka-slf4j"           % Version.akka,
-        "com.geirsson"                 %% "scalafmt-core"        % Version.scalaFmt,
         "org.typelevel"                %% "cats-core"            % Version.cats,
         "com.github.pureconfig"        %% "pureconfig"           % Version.pureConfig,
         "com.typesafe.scala-logging"   %% "scala-logging"        % Version.scalaLogging,
