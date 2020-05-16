@@ -1,4 +1,5 @@
 lazy val root = (project in file("."))
+  .enablePlugins(JavaAppPackaging)
   .settings(
     name := "???",
     version := "0.1",
