@@ -10,6 +10,7 @@ lazy val root = (project in file("."))
     coverageEnabled in(Compile, compile) := false,
     coverageEnabled in(Test, test) := true,
     parallelExecution in(Test, test) := true,
+    mainClass in Compile := Some("vbakaev.app.Main"),
     libraryDependencies ++= {
       object Version {
         val scalaTest       = "3.1.2"
