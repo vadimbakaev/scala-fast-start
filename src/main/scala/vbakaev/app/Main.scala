@@ -21,6 +21,7 @@ object Main extends App with LazyLogging {
     .fold(
       error => logger.error(s"Configuration loading error $error"),
       config => {
+        logger.info(s"App starting with configuration: $config")
         val ServerConfig(interface, port) = config.http
 
         val serverRoutes = new ServerRoutes(config).routes
@@ -30,5 +31,7 @@ object Main extends App with LazyLogging {
         logger.info(s"See documentation http://$interface:$port/swagger-ui/index.html?url=/api-docs/swagger.json")
       }
     )
+
+  logger.info("Running...")
 
 }
