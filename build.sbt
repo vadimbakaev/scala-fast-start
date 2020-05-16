@@ -74,6 +74,6 @@ scalacOptions ++= Seq(
   "-Ywarn-value-discard" // Warn when non-Unit expression results are unused.
 )
 
-coverageEnabled := true
+coverageEnabled := false
 scalafmtOnCompile := true
 parallelExecution in Test := true
