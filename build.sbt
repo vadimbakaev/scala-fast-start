@@ -3,7 +3,7 @@ import sbt.Keys.parallelExecution
 lazy val root = (project in file("."))
   .enablePlugins(JavaServerAppPackaging)
   .settings(
-    name := "???",
+    name := "scala-fast-start",
     version := "0.1",
     scalaVersion := "2.12.11",
     scalafmtOnCompile := true,
