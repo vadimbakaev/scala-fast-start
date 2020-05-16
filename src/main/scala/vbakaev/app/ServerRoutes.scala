@@ -15,7 +15,7 @@ class ServerRoutes(appConfig: AppConfig)(implicit clock: Clock) extends RouteCon
 
   private val services: Set[Interface] = Set(
     SwaggerUIInterface,
-    new SwaggerInterface(appConfig.http, documentedServices)
+    new SwaggerInterface(appConfig.http.appRoot, documentedServices)
   )
 
   val routes: Route = (services ++ documentedServices).map(_.routes).reduce(_ ~ _)

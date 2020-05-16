@@ -22,13 +22,13 @@ object Main extends App with LazyLogging {
       error => logger.error(s"Configuration loading error $error"),
       config => {
         logger.info(s"App starting with configuration: $config")
-        val ServerConfig(interface, port) = config.http
+        val ServerConfig(appRoot, interface, port) = config.http
 
         val serverRoutes = new ServerRoutes(config).routes
         Http().bindAndHandle(serverRoutes, interface, port)
 
-        logger.info(s"Server is running on http://$interface:$port/status")
-        logger.info(s"See documentation http://$interface:$port/swagger-ui/index.html?url=/api-docs/swagger.json")
+        logger.info(s"Server is running on http://$appRoot/status")
+        logger.info(s"See documentation http://$appRoot/swagger-ui/index.html?url=/api-docs/swagger.json")
       }
     )
 
