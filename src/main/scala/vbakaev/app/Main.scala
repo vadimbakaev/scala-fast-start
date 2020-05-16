@@ -4,7 +4,7 @@ import java.time.Clock
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
-import akka.stream.{ActorMaterializer, ClosedShape}
+import akka.stream.ClosedShape
 import akka.stream.scaladsl.{GraphDSL, RunnableGraph, Sink, Source}
 import com.typesafe.scalalogging.LazyLogging
 import vbakaev.app.config.AppConfig
