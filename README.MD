@@ -1,6 +1,7 @@
 # Name of the project
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f5556ea0f614b1397fe2be557d5f9fe)](https://app.codacy.com/manual/vadimbakaev/scala-fast-start?utm_source=github.com&utm_medium=referral&utm_content=vadimbakaev/scala-fast-start&utm_campaign=Badge_Grade_Dashboard)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start?ref=badge_shield)
 
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
@@ -143,3 +144,6 @@ state what the license is and how to find the text version of the license.
 Something like:
 
 "The code in this project is licensed under MIT license."
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start?ref=badge_large)
