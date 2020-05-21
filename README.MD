@@ -146,4 +146,4 @@ Something like:
 "The code in this project is licensed under MIT license."
 
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvadimbakaev%2Fscala-fast-start?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B17867%2Fgit%40github.com%3Avadimbakaev%2Fscala-fast-start.git.svg?type=large)](https://app.fossa.com/projects/custom%2B17867%2Fgit%40github.com%3Avadimbakaev%2Fscala-fast-start.git?ref=badge_large)
