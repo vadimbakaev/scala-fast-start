@@ -22,6 +22,8 @@ jobs:
       TERM: dumb
 
     steps:
+      - run: |
+          curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash
       - checkout
 
       # Download and cache dependencies
@@ -40,3 +42,13 @@ jobs:
 
       # run tests!
       - run: cat /dev/null | sbt test:test
+
+      # run fossa
+      - run:
+          name: Imports fossa-cli
+          command: fossa init
+          working_directory: .
+      - run:
+          name: Analyze the project with fossa-cli and generate a dependency graph
+          command: fossa analyze
+          working_directory: .

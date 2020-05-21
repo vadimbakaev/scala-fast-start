@@ -33,7 +33,7 @@ lazy val root = (project in file("."))
       Seq(
         "org.webjars"                  % "webjars-locator"       % Version.webJars,
         "org.webjars"                  % "swagger-ui"            % Version.swaggerUI,
-        "javax.ws.rs"                  % "javax.ws.rs-api"       % Version.javaxWsRs,
+        "javax.ws.rs"                  % "javax.ws.rs-api"       % Version.javaxWsRs artifacts(Artifact("javax.ws.rs-api", "jar", "jar")),
         "de.heikoseeberger"            %% "akka-http-circe"      % Version.akkaHttpCirce,
         "io.circe"                     %% "circe-core"           % Version.circe,
         "io.circe"                     %% "circe-generic"        % Version.circe,
