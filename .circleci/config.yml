@@ -52,3 +52,7 @@ jobs:
           name: Analyze the project with fossa-cli and generate a dependency graph
           command: fossa analyze
           working_directory: .
+      - run:
+          name: Fossa test
+          command: fossa test
+          working_directory: .
