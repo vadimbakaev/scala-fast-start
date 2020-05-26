@@ -28,7 +28,7 @@ object Main extends App with LazyLogging {
         Http().bindAndHandle(serverRoutes, interface, port)
 
         logger.info(s"Server is running on http://$appRoot/status")
-        logger.info(s"See documentation http://$appRoot/swagger-ui/index.html?url=/api-docs/swagger.json")
+        logger.info(s"See documentation http://$appRoot/docs")
       }
     )
 
