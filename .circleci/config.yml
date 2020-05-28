@@ -41,7 +41,8 @@ jobs:
           key: v1-dependencies--{{ checksum "build.sbt" }}
 
       # run tests!
-      - run: cat /dev/null | sbt test:test
+      - run: cat /dev/null | sbt coverage test coverageAggregate
+      - run: bash <(curl -Ls https://coverage.codacy.com/get.sh)
 
       # run fossa
       - run:
