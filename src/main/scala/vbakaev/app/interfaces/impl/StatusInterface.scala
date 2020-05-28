@@ -1,7 +1,8 @@
-package vbakaev.app.interfaces
+package vbakaev.app.interfaces.impl
 
 import java.time.Clock
 
+import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.server.directives.MethodDirectives.get
@@ -10,7 +11,8 @@ import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.{Content, Schema}
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import javax.ws.rs.{GET, Path}
-import vbakaev.app.models.response.StatusResponse
+import vbakaev.app.interfaces.commons.{Interface, JsonSupport}
+import vbakaev.app.interfaces.models.response.StatusResponse
 
 @Path("/status")
 class StatusInterface()(implicit clock: Clock) extends Interface with JsonSupport {
@@ -32,7 +34,7 @@ class StatusInterface()(implicit clock: Clock) extends Interface with JsonSuppor
   def getStatus: Route =
     path("status") {
       get {
-        complete(statusResponse)
+        complete(StatusCodes.OK -> statusResponse)
       }
     }
 

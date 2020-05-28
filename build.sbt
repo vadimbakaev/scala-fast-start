@@ -4,7 +4,7 @@ lazy val root = (project in file("."))
   .enablePlugins(JavaServerAppPackaging)
   .settings(
     name := "scala-fast-start",
-    version := "0.1",
+    version := "0.1.0",
     scalaVersion := "2.12.11",
     scalafmtOnCompile := true,
     coverageEnabled in(Compile, compile) := false,
@@ -47,6 +47,8 @@ lazy val root = (project in file("."))
         "com.github.pureconfig"        %% "pureconfig"           % Version.pureConfig,
         "com.typesafe.scala-logging"   %% "scala-logging"        % Version.scalaLogging,
         "ch.qos.logback"               % "logback-classic"       % Version.logback,
+        "com.typesafe.akka"            %% "akka-stream-testkit"  % Version.akka % Test,
+        "com.typesafe.akka"            %% "akka-http-testkit"    % Version.akkaHttp % Test,
         "org.scalatest"                %% "scalatest"            % Version.scalaTest % Test,
         "org.mockito"                  %% "mockito-scala"        % Version.mockitoScala % Test,
       )

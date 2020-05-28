@@ -1,8 +1,8 @@
 package vbakaev.app.interfaces.swagger
 
 import akka.http.scaladsl.server.{Directives, Route}
-import vbakaev.app.interfaces.Interface
 import org.webjars.WebJarAssetLocator
+import vbakaev.app.interfaces.commons.Interface
 
 import scala.util.{Failure, Success, Try}
 

@@ -1,10 +1,11 @@
-package vbakaev.app
+package vbakaev.app.interfaces
 
 import java.time.Clock
 
 import akka.http.scaladsl.server.{Route, RouteConcatenation}
 import vbakaev.app.config.AppConfig
-import vbakaev.app.interfaces._
+import vbakaev.app.interfaces.commons.Interface
+import vbakaev.app.interfaces.impl.{DocsInterface, StatusInterface}
 import vbakaev.app.interfaces.swagger.{SwaggerInterface, SwaggerUIInterface}
 
 class ServerRoutes(appConfig: AppConfig)(implicit clock: Clock) extends RouteConcatenation {
