@@ -21,6 +21,7 @@ lazy val root = (project in file("."))
         val logback         = "1.2.3"
         val akkaHttp        = "10.1.12"
         val akka            = "2.6.5"
+        val akkaHttpCORS    = "0.4.3"
         val swaggerAkkaHttp = "2.0.5"
         val swaggerScala    = "2.1.0"
         val circe           = "0.13.0"
@@ -40,6 +41,7 @@ lazy val root = (project in file("."))
         "io.circe"                     %% "circe-parser"         % Version.circe,
         "com.github.swagger-akka-http" %% "swagger-akka-http"    % Version.swaggerAkkaHttp,
         "com.github.swagger-akka-http" %% "swagger-scala-module" % Version.swaggerScala,
+        "ch.megard"                    %% "akka-http-cors"       % Version.akkaHttpCORS,
         "com.typesafe.akka"            %% "akka-http"            % Version.akkaHttp,
         "com.typesafe.akka"            %% "akka-stream"          % Version.akka,
         "com.typesafe.akka"            %% "akka-slf4j"           % Version.akka,

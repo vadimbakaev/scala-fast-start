@@ -129,7 +129,7 @@ links to humans using your project. You can include links like:
 *   Issue tracker: <https://github.com/your/awesome-project/issues>
 
     *   In case of sensitive bugs like security vulnerabilities, please contact
-        my@email.com directly instead of using issue tracker. We value your effort
+        <my@email.com> directly instead of using issue tracker. We value your effort
         to improve the security and privacy of this project!
 
 *   Related projects:
@@ -144,6 +144,5 @@ state what the license is and how to find the text version of the license.
 Something like:
 
 "The code in this project is licensed under MIT license."
-
 
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B17867%2Fgit%40github.com%3Avadimbakaev%2Fscala-fast-start.git.svg?type=large)](https://app.fossa.com/projects/custom%2B17867%2Fgit%40github.com%3Avadimbakaev%2Fscala-fast-start.git?ref=badge_large)
