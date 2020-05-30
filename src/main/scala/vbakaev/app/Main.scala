@@ -8,7 +8,7 @@ import com.typesafe.scalalogging.LazyLogging
 import vbakaev.app.config.{AppConfig, ServerConfig}
 import pureconfig.ConfigSource
 import pureconfig.generic.auto._
-import vbakaev.app.interfaces.ServerRoutes
+import vbakaev.app.interfaces.http.ServerRoutes
 
 import scala.concurrent.ExecutionContextExecutor
 

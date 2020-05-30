@@ -1,8 +1,8 @@
-package vbakaev.app.interfaces.swagger
+package vbakaev.app.interfaces.http.swagger
 
 import com.github.swagger.akka.SwaggerHttpService
 import com.github.swagger.akka.model.Info
-import vbakaev.app.interfaces.commons.Interface
+import vbakaev.app.interfaces.http.commons.Interface
 
 class SwaggerInterface(appRoot: String, services: Set[Interface]) extends Interface with SwaggerHttpService {
   override val apiClasses: Set[Class[_]]        = services.map(_.getClass)

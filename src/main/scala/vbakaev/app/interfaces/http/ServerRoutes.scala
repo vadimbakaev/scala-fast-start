@@ -1,4 +1,4 @@
-package vbakaev.app.interfaces
+package vbakaev.app.interfaces.http
 
 import java.time.Clock
 
@@ -8,9 +8,9 @@ import ch.megard.akka.http.cors.scaladsl.CorsDirectives._
 import ch.megard.akka.http.cors.scaladsl.model.HttpOriginMatcher.Default
 import ch.megard.akka.http.cors.scaladsl.settings.CorsSettings
 import vbakaev.app.config.AppConfig
-import vbakaev.app.interfaces.commons.Interface
-import vbakaev.app.interfaces.impl.{DocsInterface, StatusInterface}
-import vbakaev.app.interfaces.swagger.{SwaggerInterface, SwaggerUIInterface}
+import vbakaev.app.interfaces.http.commons.Interface
+import vbakaev.app.interfaces.http.impl.{DocsInterface, StatusInterface}
+import vbakaev.app.interfaces.http.swagger.{SwaggerInterface, SwaggerUIInterface}
 
 class ServerRoutes(appConfig: AppConfig)(implicit clock: Clock) extends RouteConcatenation {
 

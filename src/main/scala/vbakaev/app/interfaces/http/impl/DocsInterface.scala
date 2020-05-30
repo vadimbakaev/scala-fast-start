@@ -1,9 +1,9 @@
-package vbakaev.app.interfaces.impl
+package vbakaev.app.interfaces.http.impl
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
-import vbakaev.app.interfaces.commons.Interface
+import vbakaev.app.interfaces.http.commons.Interface
 
 class DocsInterface extends Interface {
 

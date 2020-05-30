@@ -1,14 +1,12 @@
-package vbakaev.app.interfaces.impl
+package vbakaev.app.interfaces.http.impl
 
 import java.time.{Clock, LocalDateTime, ZoneOffset}
 
 import akka.http.scaladsl.model.StatusCodes
+import akka.http.scaladsl.testkit.ScalatestRouteTest
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpecLike
-import vbakaev.app.interfaces.commons.Interface
-import akka.http.scaladsl.testkit.ScalatestRouteTest
-import akka.http.scaladsl.server._
-import Directives._
+import vbakaev.app.interfaces.http.commons.Interface
 
 class StatusInterfaceSpec extends AnyWordSpecLike with Matchers with ScalatestRouteTest {
 

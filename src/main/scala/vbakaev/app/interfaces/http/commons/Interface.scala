@@ -1,4 +1,4 @@
-package vbakaev.app.interfaces.commons
+package vbakaev.app.interfaces.http.commons
 
 import akka.http.scaladsl.server.Route
 

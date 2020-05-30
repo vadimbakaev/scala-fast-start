@@ -1,4 +1,4 @@
-package vbakaev.app.interfaces.commons
+package vbakaev.app.interfaces.http.commons
 
 import de.heikoseeberger.akkahttpcirce.ErrorAccumulatingCirceSupport
 import io.circe.generic.AutoDerivation

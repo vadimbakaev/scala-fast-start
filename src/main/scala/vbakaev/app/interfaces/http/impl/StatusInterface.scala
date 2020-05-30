@@ -1,4 +1,4 @@
-package vbakaev.app.interfaces.impl
+package vbakaev.app.interfaces.http.impl
 
 import java.time.Clock
 
@@ -11,8 +11,8 @@ import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.{Content, Schema}
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import javax.ws.rs.{GET, Path}
-import vbakaev.app.interfaces.commons.{Interface, JsonSupport}
-import vbakaev.app.interfaces.models.response.StatusResponse
+import vbakaev.app.interfaces.http.commons.{Interface, JsonSupport}
+import vbakaev.app.interfaces.http.models.response.StatusResponse
 
 @Path("/status")
 class StatusInterface()(implicit clock: Clock) extends Interface with JsonSupport {
