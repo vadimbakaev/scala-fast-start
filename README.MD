@@ -129,7 +129,7 @@ links to humans using your project. You can include links like:
 *   Issue tracker: <https://github.com/your/awesome-project/issues>
 
     *   In case of sensitive bugs like security vulnerabilities, please contact
-        <my@email.com> directly instead of using issue tracker. We value your effort
+        [mailto](mailto:my@email.com) directly instead of using issue tracker. We value your effort
         to improve the security and privacy of this project!
 
 *   Related projects:
