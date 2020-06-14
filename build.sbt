@@ -63,6 +63,7 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-encoding",
   "UTF-8",
+  "-language:higherKinds",
   "-Ypartial-unification",
   "-Ywarn-inaccessible",
   "-Ywarn-infer-any",

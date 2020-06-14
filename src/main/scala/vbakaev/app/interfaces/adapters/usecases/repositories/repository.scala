@@ -1,25 +1,23 @@
 package vbakaev.app.interfaces.adapters.usecases.repositories
 
-import scala.concurrent.Future
+trait AsyncRepository[ID, A, F[_]]
+    extends CreateRepositoryAsync[ID, A, F]
+    with UpdateRepositoryAsync[ID, A, F]
+    with ReadRepositoryAsync[ID, A, F]
+    with DeleteRepositoryAsync[ID, A, F]
 
-trait Repository[A, ID]
-    extends CreateRepository[A]
-    with UpdateRepository[A]
-    with ReadRepository[A, ID]
-    with DeleteRepository[A, ID]
-
-trait CreateRepository[A] {
-  def create(item: A): Future[A]
+trait CreateRepositoryAsync[ID, A, F[_]] {
+  def create(item: A): F[ID]
 }
 
-trait ReadRepository[A, ID] {
-  def read(id: ID): Future[Option[A]]
+trait ReadRepositoryAsync[ID, A, F[_]] {
+  def read(id: ID): F[Option[A]]
 }
 
-trait UpdateRepository[A] {
-  def update(item: A): Future[Option[A]]
+trait UpdateRepositoryAsync[ID, A, F[_]] {
+  def update(id: ID, item: A): F[Option[A]]
 }
 
-trait DeleteRepository[A, ID] {
-  def delete(id: ID): Future[Option[A]]
+trait DeleteRepositoryAsync[ID, A, F[_]] {
+  def delete(id: ID): F[Option[A]]
 }
