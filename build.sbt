@@ -13,8 +13,8 @@ lazy val root = (project in file("."))
     mainClass in Compile := Some("vbakaev.app.Main"),
     libraryDependencies ++= {
       object Version {
-        val scalaTest       = "3.1.2"
-        val mockitoScala    = "1.14.3"
+        val scalaTest       = "3.2.0"
+        val mockitoScala    = "1.14.7"
         val cats            = "2.1.1"
         val pureConfig      = "0.12.3"
         val scalaLogging    = "3.9.2"
@@ -22,13 +22,13 @@ lazy val root = (project in file("."))
         val akkaHttp        = "10.1.12"
         val akka            = "2.6.6"
         val akkaHttpCORS    = "1.0.0"
-        val swaggerAkkaHttp = "2.1.2"
+        val swaggerAkkaHttp = "2.1.1"
         val swaggerScala    = "2.1.1"
         val circe           = "0.13.0"
-        val akkaHttpCirce   = "1.32.0"
+        val akkaHttpCirce   = "1.33.0"
         val javaxWsRs       = "2.1.1"
         val webJars         = "0.40"
-        val swaggerUI       = "3.25.5"
+        val swaggerUI       = "3.27.0"
       }
 
       Seq(
@@ -63,6 +63,7 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-encoding",
   "UTF-8",
+  "-language:higherKinds",
   "-Ypartial-unification",
   "-Ywarn-inaccessible",
   "-Ywarn-infer-any",
