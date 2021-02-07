@@ -14,8 +14,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= {
       object Version {
         val scalaTest       = "3.2.3"
-        val mockitoScala    = "1.16.23"
-        val cats            = "2.3.0"
+        val mockitoScala    = "1.16.13"
+        val cats            = "2.3.1"
         val pureConfig      = "0.14.0"
         val scalaLogging    = "3.9.2"
         val logback         = "1.2.3"
