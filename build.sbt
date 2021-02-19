@@ -13,7 +13,7 @@ lazy val root = (project in file("."))
     mainClass in Compile := Some("vbakaev.app.Main"),
     libraryDependencies ++= {
       object Version {
-        val scalaTest       = "3.2.3"
+        val scalaTest       = "3.2.5"
         val mockitoScala    = "1.16.13"
         val cats            = "2.3.1"
         val pureConfig      = "0.14.0"
