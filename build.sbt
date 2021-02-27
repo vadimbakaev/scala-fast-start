@@ -5,7 +5,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-fast-start",
     version := "0.1.0",
-    scalaVersion := "2.12.11",
+    scalaVersion := "2.12.13",
     scalafmtOnCompile := true,
     coverageEnabled in(Compile, compile) := false,
     coverageEnabled in(Test, test) := true,
