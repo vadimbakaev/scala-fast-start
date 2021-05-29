@@ -43,17 +43,3 @@ jobs:
       # run tests!
       - run: cat /dev/null | sbt coverage test coverageAggregate
       - run: bash <(curl -Ls https://coverage.codacy.com/get.sh)
-
-      # run fossa
-      - run:
-          name: Imports fossa-cli
-          command: fossa init
-          working_directory: .
-      - run:
-          name: Analyze the project with fossa-cli and generate a dependency graph
-          command: fossa analyze
-          working_directory: .
-      - run:
-          name: Fossa test
-          command: fossa test
-          working_directory: .
