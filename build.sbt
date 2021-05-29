@@ -5,30 +5,28 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-fast-start",
     version := "0.1.0",
-    scalaVersion := "2.12.11",
+    scalaVersion := "2.13.6",
     scalafmtOnCompile := true,
-    coverageEnabled in(Compile, compile) := false,
-    coverageEnabled in(Test, test) := true,
     parallelExecution in(Test, test) := true,
     mainClass in Compile := Some("vbakaev.app.Main"),
     libraryDependencies ++= {
       object Version {
-        val scalaTest       = "3.2.6"
-        val mockitoScala    = "1.16.32"
-        val cats            = "2.4.2"
+        val scalaTest       = "3.2.9"
+        val mockitoScala    = "1.16.37"
+        val cats            = "2.6.1"
         val pureConfig      = "0.15.0"
-        val scalaLogging    = "3.9.2"
+        val scalaLogging    = "3.9.3"
         val logback         = "1.2.3"
-        val akkaHttp        = "10.1.13"
+        val akkaHttp        = "10.2.4"
         val akka            = "2.6.14"
-        val akkaHttpCORS    = "1.1.0"
-        val swaggerAkkaHttp = "2.2.0"
-        val swaggerScala    = "2.1.1"
+        val akkaHttpCORS    = "1.1.1"
+        val swaggerAkkaHttp = "2.4.2"
+        val swaggerScala    = "2.3.1"
         val circe           = "0.14.1"
         val akkaHttpCirce   = "1.35.3"
         val javaxWsRs       = "2.1.1"
         val webJars         = "0.40"
-        val swaggerUI       = "3.35.1"
+        val swaggerUI       = "3.49.0"
       }
 
       Seq(
@@ -64,19 +62,9 @@ scalacOptions ++= Seq(
   "-encoding",
   "UTF-8",
   "-language:higherKinds",
-  "-Ypartial-unification",
-  "-Ywarn-inaccessible",
-  "-Ywarn-infer-any",
-  "-Ywarn-nullary-override",
-  "-Ywarn-nullary-unit",
   "-Xfatal-warnings",
-  "-Yno-adapted-args", // Do not adapt an argument list (either by inserting () or creating a tuple) to match the receiver.
   "-Ywarn-dead-code", // Warn when dead code is identified.
   "-Ywarn-extra-implicit", // Warn when more than one implicit parameter section is defined.
-  "-Ywarn-inaccessible", // Warn about inaccessible types in method signatures.
-  "-Ywarn-infer-any", // Warn when a type argument is inferred to be `Any`.
-  "-Ywarn-nullary-override", // Warn when non-nullary `def f()' overrides nullary `def f'.
-  "-Ywarn-nullary-unit", // Warn when nullary methods return Unit.
   "-Ywarn-numeric-widen", // Warn when numerics are widened.
   "-Ywarn-unused:implicits", // Warn if an implicit parameter is unused.
   "-Ywarn-unused:locals", // Warn if a local definition is unused.

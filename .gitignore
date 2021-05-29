@@ -19,7 +19,9 @@ project/plugins/project/
 
 .metals/
 .bloop/
+.vscode
 project/metals.sbt
+project/project/metals.sbt
 .env*
 .fossa.yml
 .codacy-coverage/

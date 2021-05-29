@@ -26,7 +26,7 @@ object Main extends App with LazyLogging {
         val ServerConfig(appRoot, interface, port) = config.http
 
         val serverRoutes = new ServerRoutes(config).routes
-        Http().bindAndHandle(serverRoutes, interface, port)
+        Http().newServerAt(interface, port).bindFlow(serverRoutes)
 
         logger.info(s"Server is running on http://$appRoot/status")
         logger.info(s"See documentation http://$appRoot/docs")
