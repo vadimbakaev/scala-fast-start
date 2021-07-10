@@ -15,18 +15,18 @@ lazy val root = (project in file("."))
         val mockitoScala    = "1.16.37"
         val cats            = "2.6.1"
         val pureConfig      = "0.15.0"
-        val scalaLogging    = "3.9.3"
+        val scalaLogging    = "3.9.4"
         val logback         = "1.2.3"
         val akkaHttp        = "10.2.4"
-        val akka            = "2.6.14"
+        val akka            = "2.6.15"
         val akkaHttpCORS    = "1.1.1"
         val swaggerAkkaHttp = "2.4.2"
         val swaggerScala    = "2.3.1"
         val circe           = "0.14.1"
-        val akkaHttpCirce   = "1.35.3"
+        val akkaHttpCirce   = "1.37.0"
         val javaxWsRs       = "2.1.1"
-        val webJars         = "0.41"
-        val swaggerUI       = "3.49.0"
+        val webJars         = "0.40"
+        val swaggerUI       = "3.51.1"
       }
 
       Seq(
